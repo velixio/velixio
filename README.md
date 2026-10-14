@@ -10,6 +10,12 @@ I write software that is quick to run, easy to host, and doesn't spy on anyone. 
 
 ![Stars](https://img.shields.io/github/stars/velixio/supermetry?style=flat-square&label=Stars&labelColor=0f0a2e&color=8b5cf6)
 
+### Where I contribute
+
+Core maintainer of **[VoiceStudio](https://github.com/debpalash/VoiceStudio)**, an open-source AI voice studio.
+
+![Stars](https://img.shields.io/github/stars/debpalash/VoiceStudio?style=flat-square&label=Stars&labelColor=0f0a2e&color=22d3ee)
+
 ### Tools I reach for
 
 ![Go](https://img.shields.io/badge/Go-0f0a2e?style=flat-square&logo=go&logoColor=22d3ee)
