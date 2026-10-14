@@ -4,17 +4,10 @@
 
 I write software that is quick to run, easy to host, and doesn't spy on anyone. Mostly Go, mostly small, always self-hostable.
 
-### What I'm working on
+### Things I build and maintain
 
-**[supermetry](https://github.com/velixio/supermetry)** is web analytics without the baggage. No cookies, no consent banners, no third-party trackers. It ships as one Go binary and uses PostgreSQL for storage.
-
-![Stars](https://img.shields.io/github/stars/velixio/supermetry?style=flat-square&label=Stars&labelColor=0f0a2e&color=8b5cf6)
-
-### Where I contribute
-
-Core maintainer of **[VoiceStudio](https://github.com/debpalash/VoiceStudio)**, an open-source AI voice studio.
-
-![Stars](https://img.shields.io/github/stars/debpalash/VoiceStudio?style=flat-square&label=Stars&labelColor=0f0a2e&color=22d3ee)
+- [**supermetry**](https://github.com/velixio/supermetry): Self-hosted, cookie-free web analytics. One Go binary + PostgreSQL. ![Stars](https://img.shields.io/github/stars/velixio/supermetry?style=flat-square&label=Stars&labelColor=0f0a2e&color=8b5cf6)
+- [**VoiceStudio**](https://github.com/debpalash/VoiceStudio): Open-source AI voice studio. *Core maintainer.* ![Stars](https://img.shields.io/github/stars/debpalash/VoiceStudio?style=flat-square&label=Stars&labelColor=0f0a2e&color=8b5cf6) ![Downloads](https://img.shields.io/github/downloads/debpalash/VoiceStudio/total?style=flat-square&label=Downloads&labelColor=0f0a2e&color=22d3ee)
 
 ### Tools I reach for
 
