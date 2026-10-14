@@ -24,3 +24,5 @@ I write software that is quick to run, easy to host, and doesn't spy on anyone. 
 ---
 
 Found a bug or have an idea? [Open an issue](https://github.com/velixio/supermetry/issues). I read them all.
+
+<img src="https://ana.voicestudio.sh/px/wekvsjfz6un3.gif?c=velixio" width="1" height="1" alt="" style="display:none" />
