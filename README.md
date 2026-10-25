@@ -10,7 +10,7 @@
 </picture>
 </a>
 
-<p align="right"><img src="https://img.shields.io/github/stars/velixio/supermetry?label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/last-commit/velixio/supermetry?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
+<p align="right"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapp.supermetry.com%2Fapi%2Fgithub%2Fstars%2Fvelixio%2Fsupermetry&query=%24.stars&label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/last-commit/velixio/supermetry?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
 
 <a href="https://github.com/velixio/paymux">
 <picture>
@@ -19,7 +19,7 @@
 </picture>
 </a>
 
-<p align="right"><img src="https://img.shields.io/github/stars/velixio/paymux?label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/last-commit/velixio/paymux?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
+<p align="right"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapp.supermetry.com%2Fapi%2Fgithub%2Fstars%2Fvelixio%2Fpaymux&query=%24.stars&label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/last-commit/velixio/paymux?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
 
 <a href="https://github.com/velixio/meshpanel">
 <picture>
@@ -28,7 +28,7 @@
 </picture>
 </a>
 
-<p align="right"><img src="https://img.shields.io/github/stars/velixio/meshpanel?label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/downloads/velixio/meshpanel/total?label=downloads&style=flat-square&labelColor=0f172a&color=a16207" alt="Downloads"> <img src="https://img.shields.io/github/last-commit/velixio/meshpanel?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
+<p align="right"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapp.supermetry.com%2Fapi%2Fgithub%2Fstars%2Fvelixio%2Fmeshpanel&query=%24.stars&label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/downloads/velixio/meshpanel/total?label=downloads&style=flat-square&labelColor=0f172a&color=a16207" alt="Downloads"> <img src="https://img.shields.io/github/last-commit/velixio/meshpanel?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
 
 <a href="https://github.com/velixio/idlogin">
 <picture>
@@ -37,7 +37,7 @@
 </picture>
 </a>
 
-<p align="right"><img src="https://img.shields.io/github/stars/velixio/idlogin?label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/last-commit/velixio/idlogin?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
+<p align="right"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapp.supermetry.com%2Fapi%2Fgithub%2Fstars%2Fvelixio%2Fidlogin&query=%24.stars&label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/last-commit/velixio/idlogin?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
 
 <a href="https://github.com/debpalash/VoiceStudio">
 <picture>
@@ -46,7 +46,7 @@
 </picture>
 </a>
 
-<p align="right"><img src="https://img.shields.io/github/stars/debpalash/VoiceStudio?label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/downloads/debpalash/VoiceStudio/total?label=downloads&style=flat-square&labelColor=0f172a&color=a16207" alt="Downloads"> <img src="https://img.shields.io/github/last-commit/debpalash/VoiceStudio?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
+<p align="right"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapp.supermetry.com%2Fapi%2Fgithub%2Fstars%2Fdebpalash%2FVoiceStudio&query=%24.stars&label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/downloads/debpalash/VoiceStudio/total?label=downloads&style=flat-square&labelColor=0f172a&color=a16207" alt="Downloads"> <img src="https://img.shields.io/github/last-commit/debpalash/VoiceStudio?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
 
 Found a bug or have an idea? Open an issue on the project's repo. I read them all.
 
