@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/desktop-dark.svg">
-  <img src="assets/desktop-light.svg" alt="A desktop with Shimul Debnath's About window (Go engineer building small, fast, self-hostable software) and a Projects window: supermetry, paymux, meshpanel, idlogin and VoiceStudio, with star counts." width="100%">
+  <img src="assets/desktop-light.svg" alt="A desktop with a Projects window: supermetry, paymux, meshpanel, idlogin and VoiceStudio, with star counts." width="100%">
 </picture>
 
 <p align="center">

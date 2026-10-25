@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Draw the profile desktop (light and dark) with live star counts.
 
-Edit ABOUT or PROJECTS below, then run: python3 assets/gen.py
+Edit PROJECTS below, then run: python3 assets/gen.py
 Star counts come from supermetry, the same source as shimul.me. A failed
 lookup exits non-zero so the scheduled workflow never commits a broken image.
 """
@@ -12,12 +12,11 @@ import urllib.error
 import urllib.request
 from datetime import datetime
 from zoneinfo import ZoneInfo
-from html import escape
 from pathlib import Path
 
 OUT = Path(__file__).parent
 SRC = OUT / "src"
-W, H = 880, 560
+W, H = 880, 380
 FONT = "-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',Inter,Roboto,'Helvetica Neue',Arial,sans-serif"
 STARS_API = "https://app.supermetry.com/api/github/stars/"
 GITHUB_API = "https://api.github.com/repos/"
@@ -28,15 +27,6 @@ THEMES = {
     "dark": dict(win="#202026", win_op=0.86, border="#ffffff24", sep="#ffffff14", text="#f5f5f7",
                  text2="#a1a1a6", bar="#1e1e24", bar_op=0.6, dock="#ffffff", dock_op=0.16, star="#fbbf24"),
 }
-
-ABOUT = [
-    ("Builds", "Small, fast, self-hostable software"),
-    ("Language", "Go"),
-    ("Databases", "PostgreSQL, SQLite"),
-    ("Ships as", "One binary"),
-    ("Collects", "Only what it needs"),
-    ("Website", "shimul.me"),
-]
 
 # (icon file, name, one line, repo)
 PROJECTS = [
@@ -85,12 +75,11 @@ def window(x, y, w, h, title, t, sub=""):
 
 
 def desktop(t, counts, date):
-    s = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Desktop showing Shimul Debnath's about window and projects: supermetry, paymux, meshpanel, idlogin and VoiceStudio">
+    s = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Desktop with a Projects window: supermetry, paymux, meshpanel, idlogin and VoiceStudio">
   <defs>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#080a28" flood-opacity="0.45"/></filter>
     <clipPath id="screen"><rect width="{W}" height="{H}" rx="14"/></clipPath>
     <clipPath id="tile" clipPathUnits="objectBoundingBox"><rect width="1" height="1" rx="0.22"/></clipPath>
-    <clipPath id="avatar"><circle cx="216" cy="152" r="46"/></clipPath>
     <style>text{{font-family:{FONT}}}</style>
   </defs>
   <g clip-path="url(#screen)">
@@ -103,38 +92,24 @@ def desktop(t, counts, date):
   <text x="156" y="19" font-size="13" fill="{t['text']}">Projects<tspan dx="18">Elsewhere</tspan><tspan dx="18">Window</tspan></text>
   <text x="{W - 16}" y="19" text-anchor="end" font-size="13" font-weight="500" fill="{t['text']}">{date}</text>
 ''')
-    # About window
-    x, y, w = 36, 56, 360
-    s.append(window(x, y, w, 392, "About Shimul", t))
-    s.append(f'''  <image href="{data_uri('avatar.jpg', 'image/jpeg')}" x="170" y="106" width="92" height="92" clip-path="url(#avatar)"/>
-  <text x="216" y="230" text-anchor="middle" font-size="20" font-weight="700" fill="{t['text']}">Shimul Debnath</text>
-  <text x="216" y="250" text-anchor="middle" font-size="13" fill="{t['text2']}">Software engineer</text>
-''')
-    for i, (k, v) in enumerate(ABOUT):
-        ry = 286 + i * 22
-        s.append(f'  <text x="{x + 120}" y="{ry}" text-anchor="end" font-size="12.5" font-weight="600" fill="{t["text"]}">{k}</text>\n')
-        s.append(f'  <text x="{x + 134}" y="{ry}" font-size="12.5" fill="{t["text2"]}">{escape(v)}</text>\n')
-    s.append(f'  <text x="216" y="430" text-anchor="middle" font-size="11" fill="{t["text2"]}">No cookies. Visits counted by supermetry.</text>\n')
-
     # Projects window
-    x, y, w = 424, 96, 420
-    s.append(window(x, y, w, 320, "Projects", t, f"{len(PROJECTS)} items"))
+    w = 680
+    x, y = (W - w) / 2, 60
+    s.append(window(x, y, w, 210, "Projects", t, f"{len(PROJECTS)} items"))
     for i, (icon, name, line, repo) in enumerate(PROJECTS):
-        row, col = divmod(i, 3)
-        per_row = min(3, len(PROJECTS) - row * 3)
-        cx = x + w / 2 + (col - (per_row - 1) / 2) * 136
-        top = y + 50 + row * 132
-        s.append(f'  <image href="{data_uri(icon + ".svg")}" x="{cx - 28}" y="{top}" width="56" height="56" clip-path="url(#tile)"/>\n')
-        s.append(f'  <text x="{cx}" y="{top + 76}" text-anchor="middle" font-size="13" font-weight="600" fill="{t["text"]}">{name}</text>\n')
-        s.append(f'  <text x="{cx}" y="{top + 93}" text-anchor="middle" font-size="11.5" fill="{t["text2"]}">{line}</text>\n')
+        cx = x + w / 2 + (i - (len(PROJECTS) - 1) / 2) * 128
+        top = y + 56
+        s.append(f'  <image href="{data_uri(icon + ".svg")}" x="{cx - 32}" y="{top}" width="64" height="64" clip-path="url(#tile)"/>\n')
+        s.append(f'  <text x="{cx}" y="{top + 86}" text-anchor="middle" font-size="13" font-weight="600" fill="{t["text"]}">{name}</text>\n')
+        s.append(f'  <text x="{cx}" y="{top + 104}" text-anchor="middle" font-size="11.5" fill="{t["text2"]}">{line}</text>\n')
         if counts[repo] > 0:  # like shimul.me, a zero count stays hidden
-            s.append(f'  <text x="{cx}" y="{top + 111}" text-anchor="middle" font-size="11.5" font-weight="600" fill="{t["star"]}">★ {short(counts[repo])}</text>\n')
+            s.append(f'  <text x="{cx}" y="{top + 124}" text-anchor="middle" font-size="11.5" font-weight="600" fill="{t["star"]}">★ {short(counts[repo])}</text>\n')
 
     # Dock
     icons = [p[0] for p in PROJECTS] + [None, "github"]
     size, gap, pad = 48, 10, 12
     dw = sum(21 if i is None else size for i in icons) + gap * (len(icons) - 1) + pad * 2
-    dx, dy = (W - dw) / 2, 478
+    dx, dy = (W - dw) / 2, 292
     s.append(f'  <rect x="{dx}" y="{dy}" width="{dw}" height="{size + 16}" rx="20" fill="{t["dock"]}" fill-opacity="{t["dock_op"]}" stroke="#ffffff" stroke-opacity="0.25"/>\n')
     ix = dx + pad
     for icon in icons:
