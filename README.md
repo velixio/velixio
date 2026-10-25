@@ -1,28 +1,53 @@
-<img src="assets/banner.svg" alt="velixio" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" alt="Shimul Debnath: small, self-hostable software in Go" width="100%">
+</picture>
 
-## Hi, I'm Shimul 👋
+<a href="https://github.com/velixio/supermetry">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/supermetry-dark.svg">
+  <img src="assets/supermetry-light.svg" alt="supermetry: cookie-free web analytics" width="100%">
+</picture>
+</a>
 
-I write software that is quick to run, easy to host, and doesn't spy on anyone. Mostly Go, mostly small, always self-hostable.
+<p align="right"><img src="https://img.shields.io/github/stars/velixio/supermetry?label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/last-commit/velixio/supermetry?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
 
-### Things I build and maintain
+<a href="https://github.com/velixio/paymux">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/paymux-dark.svg">
+  <img src="assets/paymux-light.svg" alt="paymux: one ledger for every payment gateway" width="100%">
+</picture>
+</a>
 
-- [**supermetry**](https://github.com/velixio/supermetry): Self-hosted, cookie-free web analytics. One Go binary + PostgreSQL. ![Stars](https://img.shields.io/github/stars/velixio/supermetry?style=flat-square&label=Stars&labelColor=0f0a2e&color=8b5cf6)
-- [**VoiceStudio**](https://github.com/debpalash/VoiceStudio): Open-source AI voice studio. *Core maintainer.* ![Stars](https://img.shields.io/github/stars/debpalash/VoiceStudio?style=flat-square&label=Stars&labelColor=0f0a2e&color=8b5cf6) ![Downloads](https://img.shields.io/github/downloads/debpalash/VoiceStudio/total?style=flat-square&label=Downloads&labelColor=0f0a2e&color=22d3ee)
+<p align="right"><img src="https://img.shields.io/github/stars/velixio/paymux?label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/last-commit/velixio/paymux?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
 
-### Tools I reach for
+<a href="https://github.com/velixio/meshpanel">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/meshpanel-dark.svg">
+  <img src="assets/meshpanel-light.svg" alt="meshpanel: headscale control panel" width="100%">
+</picture>
+</a>
 
-![Go](https://img.shields.io/badge/Go-0f0a2e?style=flat-square&logo=go&logoColor=22d3ee)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0f0a2e?style=flat-square&logo=postgresql&logoColor=8b5cf6)
-![Git](https://img.shields.io/badge/Git-0f0a2e?style=flat-square&logo=git&logoColor=22d3ee)
+<p align="right"><img src="https://img.shields.io/github/stars/velixio/meshpanel?label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/downloads/velixio/meshpanel/total?label=downloads&style=flat-square&labelColor=0f172a&color=a16207" alt="Downloads"> <img src="https://img.shields.io/github/last-commit/velixio/meshpanel?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
 
-### How I like to build
+<a href="https://github.com/velixio/idlogin">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/idlogin-dark.svg">
+  <img src="assets/idlogin-light.svg" alt="idlogin: passwordless sign-in for Zitadel" width="100%">
+</picture>
+</a>
 
-1. Ship one binary instead of ten services.
-2. Collect only the data you need.
-3. Keep it fast without extra effort.
+<p align="right"><img src="https://img.shields.io/github/stars/velixio/idlogin?label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/last-commit/velixio/idlogin?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
 
----
+<a href="https://github.com/debpalash/VoiceStudio">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/voicestudio-dark.svg">
+  <img src="assets/voicestudio-light.svg" alt="VoiceStudio: fully local AI voice studio, core maintainer" width="100%">
+</picture>
+</a>
 
-Found a bug or have an idea? [Open an issue](https://github.com/velixio/supermetry/issues). I read them all.
+<p align="right"><img src="https://img.shields.io/github/stars/debpalash/VoiceStudio?label=stars&style=flat-square&labelColor=0f172a&color=a16207" alt="Stars"> <img src="https://img.shields.io/github/downloads/debpalash/VoiceStudio/total?label=downloads&style=flat-square&labelColor=0f172a&color=a16207" alt="Downloads"> <img src="https://img.shields.io/github/last-commit/debpalash/VoiceStudio?label=updated&style=flat-square&labelColor=0f172a&color=a16207" alt="Last commit"></p>
+
+Found a bug or have an idea? Open an issue on the project's repo. I read them all.
 
 [![views](https://app.supermetry.com/px/zfjiv7psp4ed.svg?c=github-velixio&style=stats)](https://supermetry.com)

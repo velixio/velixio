@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="220" viewBox="0 0 880 220" role="img" aria-label="Shimul Debnath: small, self-hostable software in Go">
+  <style>text{font-family:'Space Mono','JetBrains Mono','SF Mono',Menlo,Consolas,monospace}</style>
+  <rect x="0.5" y="0.5" width="879" height="219" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="32" y="46" font-size="13" fill="#94a3b8">~/velixio <tspan fill="#f59e0b">$</tspan> whoami</text>
+  <text x="32" y="98" font-size="38" font-weight="700" fill="#f8fafc">Shimul Debnath</text>
+  <text x="32" y="132" font-size="16" fill="#94a3b8">Small, self-hostable software in Go. Nothing that spies on anyone.</text>
+  <line x1="32" y1="158" x2="848" y2="158" stroke="#334155"/>
+  <rect x="32" y="181" width="8" height="8" fill="#f59e0b"/>
+  <text x="48" y="190" font-size="13" fill="#94a3b8">one binary, not ten services</text>
+  <rect x="304" y="181" width="8" height="8" fill="#f59e0b"/>
+  <text x="320" y="190" font-size="13" fill="#94a3b8">collect only what you need</text>
+  <rect x="576" y="181" width="8" height="8" fill="#f59e0b"/>
+  <text x="592" y="190" font-size="13" fill="#94a3b8">fast by default</text>
+
+</svg>
