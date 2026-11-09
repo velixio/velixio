@@ -1,13 +1,12 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/desktop-dark.svg">
-  <img src="assets/desktop-light.svg" alt="A desktop with a Projects window: supermetry, paymux, meshpanel, idlogin and VoiceStudio, with star counts." width="100%">
+  <img src="assets/desktop-light.svg" alt="A desktop with a Projects window: supermetry, paymux, meshpanel and VoiceStudio, with star counts." width="100%">
 </picture>
 
 <p align="center">
   <a href="https://github.com/velixio/supermetry">supermetry</a> ·
   <a href="https://github.com/velixio/paymux">paymux</a> ·
   <a href="https://github.com/velixio/meshpanel">meshpanel</a> ·
-  <a href="https://github.com/velixio/idlogin">idlogin</a> ·
   <a href="https://github.com/debpalash/VoiceStudio">VoiceStudio</a> ·
   <a href="https://shimul.me">shimul.me</a>
 </p>

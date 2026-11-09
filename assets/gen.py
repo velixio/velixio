@@ -33,7 +33,6 @@ PROJECTS = [
     ("supermetry", "supermetry", "Cookie-free analytics", "velixio/supermetry"),
     ("paymux", "paymux", "Payments, one ledger", "velixio/paymux"),
     ("meshpanel", "meshpanel", "Panel for headscale", "velixio/meshpanel"),
-    ("idlogin", "idlogin", "Sign-in for Zitadel", "velixio/idlogin"),
     ("voicestudio", "VoiceStudio", "Local AI voice", "debpalash/VoiceStudio"),
 ]
 
@@ -75,7 +74,7 @@ def window(x, y, w, h, title, t, sub=""):
 
 
 def desktop(t, counts, date):
-    s = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Desktop with a Projects window: supermetry, paymux, meshpanel, idlogin and VoiceStudio">
+    s = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Desktop with a Projects window: supermetry, paymux, meshpanel and VoiceStudio">
   <defs>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#080a28" flood-opacity="0.45"/></filter>
     <clipPath id="screen"><rect width="{W}" height="{H}" rx="14"/></clipPath>
